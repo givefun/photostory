@@ -8,7 +8,7 @@ import './style.css';
 // Get your Gemini API key by:
 // - Selecting "Add Gemini API" in the "Project IDX" panel in the sidebar
 // - Or by visiting https://g.co/ai/idxGetGeminiKey
-let API_KEY = 'AIzaSyBYX7qpU3r3aUR2EOF1Shl9pnUWjd57O0g';
+let API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 let form = document.querySelector('form');
 let output = document.querySelector('.output');
