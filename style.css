@@ -166,3 +166,23 @@ h2 {
     font-size: 12px;
   }
 }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px; /* 제목과의 간격 조정 */
+}
+
+#language-toggle {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#language-toggle:hover {
+  background-color: #2980b9;
+}

@@ -11,30 +11,34 @@
 
 <body>
   <main>
-    <h1>사진 속에 숨겨진, 스릴러 영화 스토리</h1>
     <div class="content-wrapper">
+      <div class="header">
+        <button id="language-toggle">To English</button>
+      </div>
+      <h1 id="title">사진 속에 숨겨진, 스릴러 영화 스토리</h1>
       <form>
         <div class="image-picker" id="image-drop-area">
           <label class="image-choice">
             <input type="file" name="chosen-image" accept="image/*">
             <div class="upload-icon">📁</div>
-            <span class="upload-text">이미지 선택, 드레그</span>
+            <span class="upload-text" id="upload-text">이미지 선택, 드레그</span>
           </label>
           <img id="chosen-image-preview" src="" alt="Chosen image preview" style="display: none;">
-          <div class="paste-instructions">사진을 업로드하시거나, 단축키 Ctrl-V로 이미지를 붙여넣으세요.</div>
+          <div class="paste-instructions" id="paste-instructions">사진을 업로드하시거나, 단축키 Ctrl-V로 이미지를 붙여넣으세요.</div>
         </div>
         <div class="button-container">
-          <button type="submit">스토리 생성</button>
+          <button type="submit" id="submit-button">스토리 생성</button>
         </div>
       </form>
       <div class="output-container">
-        <h2>생성 스토리</h2>
-        <p class="output">(결과가 여기에 표시됩니다)</p>
+        <h2 id="output-title">생성 스토리</h2>
+        <p class="output" id="output">(결과가 여기에 표시됩니다)</p>
       </div>
     </div>
   </main>
 
   <script type="module" src="/main.js"></script>
+  <script src="/language-toggle.js"></script>
 </body>
 
 </html>
