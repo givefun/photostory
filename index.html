@@ -22,19 +22,30 @@
           <label class="image-choice">
             <input type="file" name="chosen-image" accept="image/*">
             <div class="upload-icon">📁</div>
-            <span class="upload-text" id="upload-text">이미지 선택, 드레그</span>
+            <span class="upload-text" id="upload-text">이미지 선택/붙여넣기, 사진촬영</span>
           </label>
           <img id="chosen-image-preview" src="" alt="Chosen image preview" style="display: none;">
-          <div class="paste-instructions" id="paste-instructions">사진을 업로드하시거나, 단축키 Ctrl-V로 이미지를 붙여넣으세요.</div>
+          <div class="paste-instructions" id="paste-instructions">모바일 : 사진 촬영 혹은 갤러리 이미지를 업로드 하세요.</div>
+          <div class="paste-instructions" id="paste-instructions">PC : 이미지 파일을 업로드 혹은 Ctrl-V로 붙여넣으세요.</div>
         </div>
         <div class="button-container">
           <button type="submit" id="submit-button">스토리 생성</button>
+
         </div>
+
       </form>
+
       <div class="output-container">
         <h2 id="output-title">생성 스토리</h2>
         <p class="output" id="output">(결과가 여기에 표시됩니다)</p>
       </div>
+    </div>
+    <div class="button-wrapper">
+      <span class="contact-container">
+        <button id="contact-button">문의</button>
+        <button id="donate-button" onclick="location.href='https://paypal.me/1004korea?country.x=KR&locale.x=ko_KR'"> 후원</button>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="digitalfriend" data-color="#FFDD00" data-emoji="" data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+      </span>
     </div>
   </main>
 

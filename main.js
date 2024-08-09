@@ -168,3 +168,7 @@ document.getElementById('language-toggle').addEventListener('click', () => {
     document.getElementById('output').textContent = '(결과가 여기에 표시됩니다)';
   }
 });
+
+document.getElementById('contact-button').addEventListener('click', function() {
+    alert('연락 이메일 : koreayou@gmail.com');
+});
