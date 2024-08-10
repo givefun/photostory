@@ -186,7 +186,7 @@ document.getElementById('contact-button').addEventListener('click', function() {
 
   // 이메일 메시지 추가
   var message = document.createElement('p');
-  message.textContent = '문의사항은 다음 이메일로 연락주세요.\n email :  koreayou@gmail.com';
+  message.textContent = '문의사항은 다음 이메일로 연락주세요.\n E-mail :  koreayou@gmail.com';
   message.style.whiteSpace = 'pre-line'; // 줄바꿈을 적용하기 위한 CSS
   popup.appendChild(message);
 
