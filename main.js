@@ -169,6 +169,35 @@ document.getElementById('language-toggle').addEventListener('click', () => {
   }
 });
 
+
+
+  // 팝업창
 document.getElementById('contact-button').addEventListener('click', function() {
-    alert('연락 이메일 : koreayou@gmail.com');
+  // 커스텀 팝업 생성
+  var popup = document.createElement('div');
+  popup.style.position = 'fixed';
+  popup.style.left = '50%';
+  popup.style.top = '50%';
+  popup.style.transform = 'translate(-50%, -50%)';
+  popup.style.backgroundColor = 'white';
+  popup.style.padding = '20px';
+  popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
+  popup.style.zIndex = '1000';
+
+  // 이메일 메시지 추가
+  var message = document.createElement('p');
+  message.textContent = '문의사항은 다음 이메일로 연락주세요.\n email :  koreayou@gmail.com';
+  message.style.whiteSpace = 'pre-line'; // 줄바꿈을 적용하기 위한 CSS
+  popup.appendChild(message);
+
+  // 닫기 버튼 추가
+  var closeButton = document.createElement('button');
+  closeButton.textContent = '닫기';
+  closeButton.addEventListener('click', function() {
+      document.body.removeChild(popup);
+  });
+  popup.appendChild(closeButton);
+
+  // 팝업을 문서에 추가
+  document.body.appendChild(popup);
 });
